@@ -1,0 +1,22 @@
+.react-calendar * {color: white;}
+
+.react-calendar {
+    background-color: #2b2f33;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+
+}
+
+.react-calendar__tile--now {
+    border-radius: 5rem;
+    background-color: #ffa500;
+}
+
+.react-calendar__tile {
+    color: #2b2f33;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+    color: #757575;
+  }
