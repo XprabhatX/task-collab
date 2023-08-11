@@ -9,7 +9,7 @@ const Sidebar = () => {
     <div className='sidebar'>
         <ul>
             <img src="https://iili.io/HDCJZdX.png" alt="company logo" />
-            <li className='active-li'>Dashboard</li>
+            <li className='active-li'>Dashboard<hr/></li>
             <li>Projects</li>
             <li>My Task</li>
         </ul>
