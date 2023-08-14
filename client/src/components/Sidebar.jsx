@@ -1,17 +1,35 @@
 import React from 'react'
-import Projects from './Projects'
-import MyTask from './MyTask'
-import Dashboard from './Dashboard'
-import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 
-const Sidebar = () => {
+import { NavLink } from 'react-router-dom'
+
+function Sidebar() {
   return (
     <div className='sidebar'>
         <ul>
             <img src="https://iili.io/HDCJZdX.png" alt="company logo" />
-            <li className='active-li'>Dashboard</li>
+            {/* <li className='active-li cursor-pointer'>Dashboard</li>
             <li>Projects</li>
-            <li>My Task</li>
+            <li>My Task</li> */}
+
+            <NavLink 
+              to="/"
+              className={({ isActive }) => isActive ? 'active-li cursor-pointer' : ''}
+            >
+              Dashboard
+            </NavLink>
+
+            <NavLink 
+              to="/projects"
+              className={({ isActive }) => isActive ? 'active-li cursor-pointer' : ''}
+            >
+              Projects
+            </NavLink>
+            <NavLink 
+              to="/mytask"
+              className={({ isActive }) => isActive ? 'active-li cursor-pointer' : ''}
+            >
+              My Task
+            </NavLink>
         </ul>
     </div>
   )

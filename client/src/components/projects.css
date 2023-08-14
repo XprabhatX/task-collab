@@ -1,0 +1,59 @@
+.projects {
+    width: 100vw;
+    padding: 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.search-wrap {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #2b2f33;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(190, 190, 190);
+
+    margin-bottom: 2rem;
+}
+
+.project-add-btn {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 1rem 0;
+}
+
+.project-add-btn > div {
+    margin-left: auto;
+    background: orangered;
+    display: grid;
+    place-items: center;
+    border-radius: 6px;
+}
+
+.add-btn {
+    width: 2rem;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+.project-column {
+    display: flex;
+    overflow: hidden;
+    flex-flow: column nowrap;
+    flex: 1 1 0;
+}
+
+.project-column > h1 {
+    color: white;
+    font-family: 400;
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+}
+

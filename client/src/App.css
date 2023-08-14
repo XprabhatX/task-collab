@@ -27,11 +27,17 @@
   margin-bottom: 3rem;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .sidebar ul {
   width: 100%;
 }
 
-.sidebar ul li {
+.sidebar ul a {
+  list-style: none;
+  text-decoration: none;
   width: 100%;
   display: flex;
   justify-content: left;
@@ -42,6 +48,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .active-li {

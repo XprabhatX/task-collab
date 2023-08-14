@@ -1,0 +1,73 @@
+.mytask {
+    width: 100vw;
+    padding: 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.search-wrap {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #2b2f33;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(190, 190, 190);
+
+    margin-bottom: 2rem;
+}
+
+.task-add-btn {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 1rem 0;
+}
+
+.task-add-btn > div {
+    margin-left: auto;
+    background: orangered;
+    display: grid;
+    place-items: center;
+    border-radius: 6px;
+}
+
+.add-btn {
+    width: 2rem;
+    color: white;
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-column {
+    overflow: hidden;
+    flex: 1 1 0;
+    margin: 10px 0;
+    background-color: #2b2f33;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+
+    border-radius: 8px;
+}
+
+.task-column > div {
+    display: flex;
+}
+
+.task-column > div > h1 {
+    display: inline-block;
+    color: white;
+    font-family: 400;
+    font-size: 1rem;
+    margin: 5px 10px;
+}
+
+span .add-btn {
+    margin-left: auto;
+    width: 1.5rem;
+    cursor: pointer;
+}
