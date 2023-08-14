@@ -23,7 +23,10 @@ const Dashboard = () => {
                     <div className="pro-head">
                         <div className="pro-logo">A</div>
                         <div className="pro-title">Project 1</div>
-                        <span class="material-symbols-outlined">more_vert</span>
+                        <div className="pro-icons">
+                            <span class="material-symbols-outlined gl-icon" style={{color: 'yellow'}}>star</span>
+                            <span class="material-symbols-outlined">more_vert</span>
+                        </div>
                     </div>
 
                     <div className="pro-body">
@@ -47,7 +50,10 @@ const Dashboard = () => {
                     <div className="pro-head">
                         <div className="pro-logo">B</div>
                         <div className="pro-title">Project 2</div>
-                        <span class="material-symbols-outlined">more_vert</span>
+                        <div className="pro-icons">
+                            <span class="material-symbols-outlined gl-icon" style={{color: 'yellow'}}>star</span>
+                            <span class="material-symbols-outlined">more_vert</span>
+                        </div>
                     </div>
 
                     <div className="pro-body">
