@@ -2,6 +2,7 @@
     width: 100vw;
     padding: 2rem;
     font-family: 'Inter', sans-serif;
+    color: white;
 }
 
 .search-wrap {
@@ -70,4 +71,37 @@ span .add-btn {
     margin-left: auto;
     width: 1.5rem;
     cursor: pointer;
+}
+
+.task-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.pro-tag-margin {
+    margin-top: 0px;
+}
+
+.task-child-header {
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+    margin: 0 0.5rem;
+    font-weight: bold;
+}
+
+.task-child-header > div {
+    border: 1px solid gray;
+    padding: 0.5rem;
+
+}
+
+.task-content {
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+    padding: 0 0.5rem;
+}
+
+.task-content > div {
+    border: 1px solid gray;
+    padding: 0.5rem;
 }

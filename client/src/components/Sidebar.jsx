@@ -3,6 +3,18 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 function Sidebar() {
+  const nav = [
+    {
+      "link": "/", "name": "Dashboard"
+    },
+    {
+      "link": "/projects", "name": "Projects"
+    },
+    {
+      "link": "/mytask","name": "My Task"
+    }
+  ]
+  
   return (
     <div className='sidebar'>
         <ul>
@@ -11,25 +23,17 @@ function Sidebar() {
             <li>Projects</li>
             <li>My Task</li> */}
 
-            <NavLink 
-              to="/"
-              className={({ isActive }) => isActive ? 'active-li cursor-pointer' : ''}
-            >
-              Dashboard
-            </NavLink>
-
-            <NavLink 
-              to="/projects"
-              className={({ isActive }) => isActive ? 'active-li cursor-pointer' : ''}
-            >
-              Projects
-            </NavLink>
-            <NavLink 
-              to="/mytask"
-              className={({ isActive }) => isActive ? 'active-li cursor-pointer' : ''}
-            >
-              My Task
-            </NavLink>
+            {
+              nav.map((item, idx) => (
+                <NavLink 
+                  key={idx}
+                  to={item.link}
+                  className={({ isActive }) => isActive ? 'active-li cursor-pointer' : ''}
+                >
+                  {item.name}
+                </NavLink>
+              ))
+            }
         </ul>
     </div>
   )
